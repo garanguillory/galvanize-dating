@@ -1,0 +1,25 @@
+
+<div class="container">
+	<div class="row">
+		<div class="twelve columns">
+			<ul class="navigation">
+				<li><a ng-href="#/">gDating</a></li>
+				<li class="u-pull-right" ng-class="{hide: $route.current.page != 'memberPage'}">
+					<a ng-href="#/login" ng-click="login()">Login</a>
+				</li>
+				<li class="u-pull-right" ng-class="{hide: $route.current.page != 'memberPage'}">
+					<a ng-href="#/register" ng-click="register()">Register</a>
+				</li>
+				<li class="u-pull-right" ng-show="$route.current.page == 'memberPage'">
+					<a ng-click="search()">Search</a>
+				</li>
+				<li class="u-pull-right" ng-show="$route.current.page == 'memberPage'">
+					<a ng-click="myProfile()">My Profile</a>
+				</li>
+				<li class="u-pull-right" ng-show="$route.current.page == 'memberPage'">
+					<a ng-href="#/" ng-click="logout()">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

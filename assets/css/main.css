@@ -1,0 +1,86 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	1). universal
+	2). navbar
+	3). members
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ------ universal ------- */
+
+	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	  display: none !important;
+	}
+
+	html{
+		font:16px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #1EAEDB;
+	}
+	
+	.centered {
+		text-align: center;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	#red {
+		background: rgb(251,73,72);
+		border: none;
+		color: white;
+	}
+
+	#red:hover {
+		background: rgb(226, 48, 47);
+	}
+
+/* ------ navbar ------- */
+
+	.navigation {
+		border-bottom: 1px solid black;
+	}
+
+	.navigation li {
+		/*border-left: 1px solid black;*/
+		display: inline-block;
+		/*margin-right: 1rem;*/
+		padding: 0 1rem;
+	}
+
+/* border removed from gDating link */
+/* need to edit navbar links */
+	.navigation li:first-child{
+		border-left: none;
+		padding-left: 0rem;
+	}
+
+/*	.navigation li:nth-child(2){
+		border-left: none;
+	}*/
+
+/* ------ members display ------- */
+
+
+
+
+
+
+
+
