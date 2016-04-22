@@ -26,7 +26,7 @@
       restricted: false,
       preventLoggedIn: true
     })
-    .when('/member', {
+    .when('/members', {
       template: '<member></member>',
       restricted: true,
       requiresLogin: true

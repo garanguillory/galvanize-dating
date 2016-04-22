@@ -12,8 +12,9 @@ app.directive("login",
 				  authService.login($scope.user)
 				    .then(function(user) {
 				      authService.setUserInfo(user);
-				      $location.path('/member');
+				      $location.path('/members');
 				      $rootScope.currentUser = authService.getUserInfo();
+				      console.log($rootScope.currentUser);
 				    })
 				    .catch(function(err) {
 				      // check status code, send appropriate message

@@ -1,4 +1,5 @@
-app.service('membersService',[ '$http', function($http){
+app.service('membersService',[ '$http', '$location', 'authService',  function($http, $location, authService){
+
 
 	return {
 
@@ -7,6 +8,12 @@ app.service('membersService',[ '$http', function($http){
 		},
 		getAllMembers: function(){
 			return $http.get('http://galvanize-student-apis.herokuapp.com/gdating/members')
+		},
+		getMemberByID: function(id){
+			return $http.get('http://galvanize-student-apis.herokuapp.com/gdating/members/'+id);
+		},
+		updateMember: function(user){
+			return $http.put('https://galvanize-student-apis.herokuapp.com/gdating/members/'+user._id, user)
 		}
 
 	}

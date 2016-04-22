@@ -1,8 +1,57 @@
 <navbar></navbar>
 
 <div class="row">
-	<div class="six columns border centered">
-		<h3>Edit Account</h3>
+	<div class="six columns edit-account">
+		<div class="six columns">
+			<h3 class="">Edit Account</h3>	
+		</div>
+		<div class="six columns">
+			<img ng-src={{user.avatar}} alt="user.names.firstName">
+		</div>
+		<br>
+		<form class="edit-account-form" ng-submit="editAccount()">
+			<div class="six columns">
+				<label for="email">User Name</label>
+				<input ng-model="user.username" class="u-full-width" type="text" id="username" required>
+			</div>
+			<div class="six columns">
+				<label for="email">Email</label>
+				<input ng-model="user.email" class="u-full-width" type="email" id="email" required>
+			</div>
+			<div class="six columns" style="margin-left: 0">
+				<label for="firstName">First Name</label>
+				<input ng-model="user.names.firstName" class="u-full-width" type="text" id="firstName" required>
+			</div>
+			<div class="six columns">
+				<label for="lastName">Last Name</label>
+				<input ng-model="user.names.lastName" class="u-full-width" type="text" id="lastName" required>
+			</div>
+			<div class="four columns" style="margin-left: 0">
+				<label for="dob">Date of Birth</label>
+				<input ng-model="user.dob" class="u-full-width" type="text" id="dob" required>
+			</div>
+			<div class="four columns">
+				<label for="phonenumber">Phone Number</label>
+				<input ng-model="user.phone" class="u-full-width" type="text" id="phonenumber" required>
+			</div>
+			<div class="four columns">
+				<label for="slug">Slug</label>
+				<input ng-model="user.slug" class="u-full-width" type="text" id="slug" required>
+			</div>
+			<div class="four columns" style="margin-left: 0">
+				<label for="avatar">Image URL</label>
+				<input ng-model="user.avatar" class="u-full-width" type="text" id="avatar" required>
+			</div>
+			<div class="four columns">
+				<label for="latitude">Latitude</label>
+				<input ng-model="user.address.geo.lat" class="u-full-width" type="text" id="latitude" required>
+			</div>
+			<div class="four columns">
+				<label for="longitude">Longitude</label>
+				<input ng-model="user.address.geo.lng" class="u-full-width" type="text" id="longitude" required>
+			</div>
+			<input type="submit" value="Edit Profile">
+		</form>
 	</div>
 	<div class="six columns border centered">
 		<h3>User's Account Information</h3>

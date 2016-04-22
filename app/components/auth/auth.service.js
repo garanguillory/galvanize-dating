@@ -17,6 +17,7 @@
       setUserInfo: function(userData) {
           // what to stringify for 'user' and 'token'
         $window.localStorage.setItem('user', JSON.stringify(userData.data.data.user.email));
+        $window.localStorage.setItem('_id', JSON.stringify(userData.data.data.user._id));
         $window.localStorage.setItem('token', JSON.stringify(userData.data.data.token));
       },
       setRegisterUserInfo: function(userData) {
@@ -26,6 +27,9 @@
       },
       getUserInfo: function(userData) {
         return $window.localStorage.getItem('user');
+      },
+      userID: function(userData){
+        return $window.localStorage.getItem('_id')
       }
     }
 

@@ -134,3 +134,23 @@
 	}
 
 
+/*-------- profiel page --------*/
+
+.edit-account {
+	border: 1px solid black;
+	padding: 1rem;
+	position: relative;
+}
+
+.edit-account img {
+	height: 100px;
+	float: right;
+	/*position: absolute;*/
+	/*top: 1rem;*/
+	/*right: 1rem;*/
+	width: 100px;
+}
+
+.edit-account-form {
+	margin-bottom: 0;
+}
