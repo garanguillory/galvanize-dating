@@ -3,17 +3,17 @@
 
 <div class="container">
 
-	<form>
+	<form ng-submit="register()">
 	  <div class="row">
 		  <div class="six columns offset-by-three">
 		  	<h1>Register</h1>
 			  <div class="u-full-width">
-		      <label for="username">Username</label>
-		      <input class="u-full-width" type="email" placeholder="username goes here" id="username">
+		      <label for="email">Email</label>
+		      <input ng-model="user.email" class="u-full-width" type="email" placeholder="email goes here" id="email" required>
 		    </div>
 		    <div class="u-full-width">
 		      <label for="password">Password</label>
-					<input class="u-full-width" type="password" placeholder="•••••••••••" id="password">
+					<input ng-model="user.password" class="u-full-width" type="password" placeholder="•••••••••••" id="password" required>
 		    </div>
 		    <input class="button" type="submit" value="Create Account">
 		  </div>

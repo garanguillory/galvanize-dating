@@ -1,0 +1,43 @@
+<navbar></navbar>
+
+<div class="row">
+
+	<div class="six columns" style="border-right: 1px solid black">
+		<ul class="member-options centered">
+			<li><a ng-click="">All</a></li>
+			<li><a ng-click="">Popular</a></li>
+			<li><a ng-click="">Near Me</a></li>
+			<li><a ng-click="">My Matches</a></li>
+			<li><a ng-click="">Chatting</a></li>
+		</ul>
+		<div class="member-individual" ng-click="showMember()" ng-repeat="member in members">
+			<img ng-src={{member.avatar}} alt="{{member.username}}">
+			<ul class="member-stats">
+				<li>username: {{member.username}}</li>
+				<li>name: {{member.names.firstName}} {{member.names.lastName}}</li>
+				<li>email: {{member.email}}</li>
+				<li>website: {{member.website}}</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="six columns">
+		<div class="currentMember-individual border" ng-show="currentMember">
+			<img ng-src={{currentMember.avatar}} alt="{{currentMember.username}}">
+			<ul class="currentMember-stats">
+				<li>username: {{currentMember.username}}</li>
+				<li>name: {{currentMember.names.firstName}} {{currentMember.names.lastName}}</li>
+				<li>email: {{currentMember.email}}</li>
+				<li>website: {{currentMember.website}}</li>
+			</ul>
+			<ul class="currentMember-connection centered">
+				<li>Popular</li>
+				<li>Neary you!</li>
+				<li>Likes you!</li>
+				<li><button>Match Me!</button></li>
+			</ul>
+		</div>
+	</div>
+
+
+</div>

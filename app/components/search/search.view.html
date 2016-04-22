@@ -1,0 +1,41 @@
+<navbar></navbar>
+
+<div class="row">
+
+	<div class="six columns" style="border-right: 1px solid black">
+		<h5 class="centered">Search Matches</h5>
+		<div class="member-individual" ng-click="showMember()" ng-repeat="member in members">
+			<img ng-src={{member.avatar}} alt="{{member.username}}">
+			<ul class="member-stats">
+				<li>username: {{member.username}}</li>
+				<li>name: {{member.names.firstName}} {{member.names.lastName}}</li>
+				<li>email: {{member.email}}</li>
+				<li>website: {{member.website}}</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="six columns">
+		<form class="border">
+		  <div class="row">
+		    <div class="">
+		      <label for="exampleEmailInput">Your email</label>
+		      <input class="u-half-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+		    </div>
+		    <div class="">
+		      <label for="exampleEmailInput">Your email</label>
+		      <input class="u-half-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+		    </div>
+		  </div>
+		  <label for="exampleMessage">Message</label>
+		  <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+		  <label class="example-send-yourself-copy">
+		    <input type="checkbox">
+		    <span class="label-body">Send a copy to yourself</span>
+		  </label>
+		  <input class="button-primary" type="submit" value="Submit">
+		</form>
+	</div>
+
+
+</div>

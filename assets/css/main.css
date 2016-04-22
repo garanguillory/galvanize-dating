@@ -51,6 +51,10 @@
 		background: rgb(226, 48, 47);
 	}
 
+	.border {
+		border: 1px solid black;
+	}
+
 /* ------ navbar ------- */
 
 	.navigation {
@@ -64,23 +68,69 @@
 		padding: 0 1rem;
 	}
 
-/* border removed from gDating link */
-/* need to edit navbar links */
+	/* border removed from gDating link */
+	/* need to edit navbar links */
 	.navigation li:first-child{
 		border-left: none;
 		padding-left: 0rem;
 	}
 
-/*	.navigation li:nth-child(2){
+	/*	.navigation li:nth-child(2){
 		border-left: none;
 	}*/
 
 /* ------ members display ------- */
 
+	.member-options {
+		/*border-bottom: 1px solid black;*/
+	}
 
+	.member-options li {
+		border-right: 1px solid black;
+		display: inline-block;
+		margin: 0 0.5rem;
+		padding-right: 1.5rem;
+	}
 
+	.member-options li:last-child {
+		border-right: none;
+		padding-right: none;
+	}
 
+	.member-stats {
+		display: inline-block;
+		margin-bottom: 0;
+	}
 
+	.member-individual {
+		margin: 2rem 1rem;
+		margin-right: 0;
+	}
+	
+	.member-individual:hover {
+		background: lightgrey;
+	}
 
+	/* currentMember info */
+
+	.currentMember-connection {
+
+	}
+
+	.currentMember-connection li {
+		display: inline-block;
+		margin: 0 0.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.currentMember-stats {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.currentMember-individual {
+		margin: 2rem 1rem;
+		margin-right: 0;
+	}
 
 

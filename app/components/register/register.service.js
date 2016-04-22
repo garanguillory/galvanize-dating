@@ -1,5 +1,6 @@
-app.service('loginService',[ '$location', function($location){
+app.service('registerService',[ '$location', function($location){
 
 	return {}
 
 }]);
+

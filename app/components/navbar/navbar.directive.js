@@ -1,12 +1,17 @@
 
-app.directive("navbar",['$route', 'navbarService', function($route, navbarService){
+app.directive("navbar",['$route', '$window', 'navbarService', 'authService', function($route, $window, navbarService, authService){
 		return {
 			restrict: 'AE',
+			templateUrl: "app/components/navbar/navbar.view.html",
 			controller: function($scope){
 
 				$scope.$route = $route;
+				$scope.logout = authService.logout;
 
-			},
-			templateUrl: "app/components/navbar/navbar.view.html"
+				$scope.hasToken = $window.localStorage.getItem('token') ? true : false;
+				console.log("hasToken: ",$scope.hasToken);
+
+			}
+			
 		};
 }]);
