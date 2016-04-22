@@ -2,22 +2,91 @@
 <navbar></navbar>
 
 <div class="container">
+	<div class="row">
+		<div class="twelve">
 
 	<form ng-submit="register()">
+	<h1>Register</h1>
 	  <div class="row">
-		  <div class="six columns offset-by-three">
-		  	<h1>Register</h1>
-			  <div class="u-full-width">
-		      <label for="email">Email</label>
-		      <input ng-model="user.email" class="u-full-width" type="email" placeholder="email goes here" id="email" required>
-		    </div>
-		    <div class="u-full-width">
-		      <label for="password">Password</label>
-					<input ng-model="user.password" class="u-full-width" type="password" placeholder="•••••••••••" id="password" required>
-		    </div>
-		    <input class="button" type="submit" value="Create Account">
-		  </div>
-	  </div>
+			<div class="four columns" >
+	      <label for="username">User Name</label>
+	      <input ng-model="user.username" class="u-full-width" type="text" placeholder="What would you like your username to be?" id="username" required>
+	    </div>
+		  <div class="four columns" >
+	      <label for="email">Email</label>
+	      <input ng-model="user.email" class="u-full-width" type="email" placeholder="Email goes here" id="email" required>
+	    </div>
+	    <div class="four columns" >
+	      <label for="password">Password</label>
+				<input ng-model="user.password" class="u-full-width" type="password" placeholder="•••••••••••" id="password" required>
+	    </div>
+		</div>
+		<div class="row">
+		  <div class="six columns" >
+	      <label for="firstname">First Name</label>
+	      <input ng-model="user.names.firstName" class="u-full-width" type="text" placeholder="First name goes here" id="firstname" required>
+	    </div>
+	    <div class="six columns" >
+	      <label for="lastname">Last Name</label>
+				<input ng-model="user.names.lastname" class="u-full-width" type="text" placeholder="Last name goes here" id="lastname" required>
+	    </div>
+		</div>
+		<div class="row">
+		  <div class="four columns" >
+	      <label for="dob">Date of Birth</label>
+	      <input ng-model="user.dob" class="u-full-width" type="text" placeholder="When were you born?" id="dob" required>
+	    </div>
+	    <div class="four columns" >
+	      <label for="phonenumber">Phone Number</label>
+				<input  ng-model="user.phone" class="u-full-width" type="number" placeholder="What are your digits?" id="phonenumber" required>
+	    </div>
+      <div class="four columns" >
+        <label for="slug">Unique URL ID</label>
+  			<input  ng-model="user.slug" class="u-full-width" type="text" placeholder="Slug Life" id="slug" required>
+      </div>
+		</div>
+		<div class="row">
+		  <div class="six columns" >
+	      <label for="latitude">Latitude</label>
+	      <input ng-model="user.address.geo.lat" class="u-full-width" type="text" placeholder="Why would you know this?" id="latitude" required>
+	    </div>
+	    <div class="six columns" >
+	      <label for="longitude">Longitude</label>
+				<input ng-model="user.address.geo.lng" class="u-full-width" type="text" placeholder="How would you know this?" id="longitude" required>
+	    </div>
+		</div>
+		<div class="row">
+			<div class="six columns" >
+				<input class="button" type="submit" value="Create Account">
+			</div>
+		</div>
 	</form>
+
+		</div>
+	</div>
 	
 </div>
+
+<!-- <form>
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+    </div>
+  </div>
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit">
+</form> -->
